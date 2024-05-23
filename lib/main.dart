@@ -20,6 +20,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomeScreen(
+        // App Title
         appTitle: 'Toasty Example',
       ),
     );
