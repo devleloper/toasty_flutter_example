@@ -40,19 +40,35 @@ class HomeScreen extends StatelessWidget {
       body: Center(
         child: ElevatedButton(
           onPressed: () {
-            DelightToastBar(
-              builder: (context) => ToastCard(
-                title: Text('Message'),
-                leading: Icon(CupertinoIcons.bell),
-              ),
-              snackbarDuration: Durations.extralong4,
-              position: DelightSnackbarPosition.top,
-              autoDismiss: true,
-            ).show(context);
+            showToastBar().show(context);
           },
           child: Text('Click on me!'),
         ),
       ),
+    );
+  }
+
+// Create a method
+  DelightToastBar showToastBar() {
+    return DelightToastBar(
+      // Firstly, create a builder, which returns us ToastCard()
+      builder: (context) => const ToastCard(
+        // Title
+        title: Text('Message'),
+        // Leading, it can be everything, but usually Icon or Text
+        leading: Icon(CupertinoIcons.bell),
+      ),
+
+      // Than we can change properties of showing our toast
+
+      // Duration
+      snackbarDuration: Durations.extralong4,
+
+      // Position (Top, Bottom)
+      position: DelightSnackbarPosition.top,
+
+      // AutoDismiss (It disappear after time)
+      autoDismiss: true,
     );
   }
 }
