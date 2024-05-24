@@ -1,16 +1,15 @@
-# toasty_flutter_example
+# Toasty Example
 
-A new Flutter project.
+![image](https://github.com/devleloper/toasty_flutter_example/assets/157947350/ba30692a-39f7-455c-bb01-8c296893f584)
 
-## Getting Started
+Toasty Example is a simple Flutter application that demonstrates the usage of the DelightfulToast package. This project showcases how to create and display customizable toast notifications in a Flutter application.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Display toast notifications with customizable properties
+- Set the duration and position of the toast
+- Auto-dismiss feature for the toast notifications
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Main Libraries Used
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- [DelightfulToast](https://pub.dev/packages/delightful_toast)
